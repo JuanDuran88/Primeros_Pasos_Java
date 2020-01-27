@@ -2,8 +2,8 @@ package poo;
 
 public class Coche {
 	
-	private int ruedas;
 	private int largo;
+	private int ruedas;
 	private int ancho;
 	private int motor;
 	private int peso_plataforma;
@@ -40,6 +40,28 @@ public class Coche {
 	public String dime_color() {
 		
 		return "El color de tu coche es " + color;
+		
+	}
+	
+	public void configura_asientos(String asientos_cuero) { //SETTER
+		
+		if(asientos_cuero=="si") {
+			
+			this.asientos_cuero=true;
+		}else {
+			this.asientos_cuero=false;
+		}
+	}
+	
+	public String dime_asientos() { //GETTER
+		
+		if(asientos_cuero==true) {
+			
+			return "El coche tiene asientos de cuero";
+		}else {
+			
+			return "El coche tiene asientos de serie";
+		}
 		
 	}
 
