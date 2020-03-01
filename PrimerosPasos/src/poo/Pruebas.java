@@ -15,15 +15,18 @@ public class Pruebas {
 		
 		/*trabajador1.cambiaNombre("María");*/
 		
-		System.out.println(trabajador1.devuelvoDatos());
+		System.out.println(trabajador1.devuelvoDatos() + "\n" + trabajador2.devuelvoDatos() +
+				"\n" + trabajador3.devuelvoDatos() + "\n" + trabajador4.devuelvoDatos());
 		
 		
-		System.out.println(trabajador2.devuelvoDatos());
+		/*System.out.println(trabajador2.devuelvoDatos());
 		
 		
 		System.out.println(trabajador3.devuelvoDatos());
 		
-		System.out.println(trabajador4.devuelvoDatos());
+		System.out.println(trabajador4.devuelvoDatos());*/
+		
+		System.out.println(Empleados.dameIdSiguiente());
 
 	}
 
@@ -61,6 +64,12 @@ class Empleados{
 		
 		return "El nombre es: " + nombre + " y la sección es " + seccion + " y el Id= " +Id;
 		
+		
+	}
+	
+	public static String dameIdSiguiente() {
+		
+		return "El IdSiguiente: " + IdSiguiente;
 		
 	}
 	
