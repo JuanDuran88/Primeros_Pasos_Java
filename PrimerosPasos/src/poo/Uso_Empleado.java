@@ -40,6 +40,11 @@ public class Uso_Empleado {
 		                           //Podemos utilizar un objeto de la subclase cuando el programa espere un objeto de la superclase. Regla de escun
 		misEmpleados[5]=new Jefatura("Maria",95000, 1999,5,26);
 		
+		Jefatura jefa_Finanzas=(Jefatura) misEmpleados[5]; //Casting para convertir un objeto de un tipo en otro, me permite utilizar jefa finanzas.
+		
+		jefa_Finanzas.estableceIncentivo(55000);
+		
+		
 		
 		/*for(int i=0;i<3;i++) {
 			
@@ -121,7 +126,7 @@ class Empleado{
 	
 }
 
-class Jefatura extends Empleado{
+final class Jefatura extends Empleado{
 	
 	public Jefatura(String nom, double sue, int agno, int mes, int dia) {
 		
@@ -146,3 +151,13 @@ class Jefatura extends Empleado{
 	private double incentivo;
 	
 }
+
+	//class Director extends Jefatura{ //ejm de clase sin poder continuar con la herencia
+		
+		//public Director (String nom, double sue, int agno, int mes, int dia) {
+			
+			//super(nom, sue, agno, mes, dia);
+			
+		//}
+		
+	//}
